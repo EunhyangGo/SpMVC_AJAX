@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-sizing: bordeer-box;
+	}
+	
+	html, body{
+	width: 100%;
+	}
+	
+	body{
+	display: flex;
+	flex-direction: column; /*위에서 아래 방향으로 흐르게 하기*/
+	margin: 0 px;
+	}
+	
+	header{
+	flex: 0 0 auto;
+	background-color: #26D845; /* 녹색보다는 조금 진한색 */
+	color: white;
+	padding : 1em; /* 글자크기에 따라 padding을 유동적으로 조절*/
+	}
+	
+	h2{
+	color:inherit; /*header에 지정된 color를 상속받아라*/
+	text-align: center;
+	}
+	
+	nav{
+	background-color: blue;
+	display: flex;
+	}
+	
+	nav a{
+	display: inline-block;
+	flex: 0 0 auto;
+	color: white;
+	margin-left:5px; /*박스 사이즈 조절 */
+	padding: 0.5em; 
+	/*글자크기에 맞춰 박스사이즈가 생기게됨. 
+	여기서 margin을 주게되면 안에 글씨에만 hover생김, 
+	그럼 이상함, 그러니까 padding줘야함*/
+	text-decoration: none; /* 밑줄 없애기*/
+	}
+	
+	nav a:hover{
+	background-color: #7FFFFF;
+	color: blue;
+	}
+	
+	section{
+	flex: 0 1 auto;
+	display: flex;
+	height: auto;
+	padding: 5px;
+	}
+	
+	#p-list{
+	flex: 0 0 68%;
+	border: 1px solid blue;
+	margin: 3px;
+	height: auto;
+	}
+	
+	#s-cart{
+	flex: 0 0 28%;
+	border: 1px solid blue;
+	margin: 3px;
+	}
+	
+	footer{
+	flex: 0 1 30px;
+	background-color: #c0c0c0;
+	text-align: center;
+	padding: 0.3em;
+	color: white;
+	}
+	
